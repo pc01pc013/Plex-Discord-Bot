@@ -101,6 +101,7 @@ module.exports= {
 };
 ```
 > To Get PLEX_SECTIONS_KEY, please refer: [Plex Media Server URL Commands](https://support.plex.tv/articles/201638786-plex-media-server-url-commands/) -> Listing Defined Libraries
+
 If you see any bugs or have any suggestions, use the issue tracker.  Thanks!
 
 ***
