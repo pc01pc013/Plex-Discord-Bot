@@ -6,6 +6,7 @@ module.exports = {
   'token'       : 'PLEX_TOKEN',
   'machineId'   : 'PLEX_MACHINEID',
   'managedUser' : 'PLEX_MANAGED_USERNAME',
+  'sectionsKey' : 'PLEX_SECTIONS_KEY',
   'options'     : {
     'identifier': 'APP_IDENTIFIER',
     'product'   : 'APP_PRODUCT_NAME',

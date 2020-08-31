@@ -8,6 +8,8 @@ module.exports = function(client) {
     console.log('logged in as: ' + client.user.tag);
 
     plexCommands['plexTest'].process();
+    plexCommands['findAll'].process();
+    plexCommands['findAllPlaylists'].process();
   });
 
   // when message is sent to discord
