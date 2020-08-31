@@ -47,12 +47,22 @@ If I am missing any steps, feel free to reach out or open  an issue/bug in the I
 * `!nextpage` : get next page of songs if desired song is not listed
 * `!pause` : pauses current song if one is playing
 * `!play <song title or artist>` : bot will join voice channel and play song if one song available.  if more than one, bot will return a list to choose from
-* `!playsong <song number>` : plays a song from the generated song list
+* `!playsong <song number> [count]` : plays a song from the generated song list, you can give the count number to play it more than once.
+* `!playall [count]` : play all songs from the generated song list
 * `!removesong <song queue number>` : removes song by index from the song queue
 * `!resume` : resumes song if previously paused
 * `!skip` : skips the current song if one is playing and plays the next song in queue if it exists
 * `!stop` : stops song if one is playing
 * `!viewqueue` : displays current song queue
+* `!clearqueue` : clears all songs in queue
+* `!rng <total num>` : All songs shuffle
+* `!showall` : Show All Library Artists Lists
+* `!shows <number>` : Show Select Artist Detials
+* `!showt <number>` : Show Select Track Detials
+* `!showptall` : Show All Playlists
+* `!showpt <number>` : Show Select Playlist Detials
+* `!refreshplaylists` : Refresh All Playlists Data
+* `!refreshartists` : Refresh All Library Artists Lists
 
 ***
 ## Customization
@@ -79,6 +89,7 @@ module.exports= {
   'token'       : 'PLEX_TOKEN',
   'machineId'   : 'PLEX_MACHINEID',
   'managedUser' : 'PLEX_MANAGED_USERNAME',
+  'sectionsKey' : 'PLEX_SECTIONS_KEY',
   'options'     : {
     'identifier': 'APP_IDENTIFIER',
     'product'   : 'APP_PRODUCT_NAME',
@@ -89,7 +100,7 @@ module.exports= {
   }
 };
 ```
-
+> To Get PLEX_SECTIONS_KEY, please refer: [Plex Media Server URL Commands](https://support.plex.tv/articles/201638786-plex-media-server-url-commands/) -> Listing Defined Libraries
 If you see any bugs or have any suggestions, use the issue tracker.  Thanks!
 
 ***
